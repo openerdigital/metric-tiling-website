@@ -1,0 +1,162 @@
+/* wrapper styles */
+@layer components {
+  figure.comparisonTable {
+    overflow: auto;
+    margin-left: -24px;
+    margin-right: -24px;
+    max-width: 100vw;
+    padding: 0 24px;
+
+    @media (min-width: 700px) {
+      margin-left: -32px;
+      margin-right: -32px;
+
+      padding: 0 32px;
+    }
+    @media (min-width: 1024px) {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+      overflow: visible;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    table {
+      width: 100%;
+      /* column headers */
+      th {
+        padding: 16px;
+        text-align: center;
+        figure {
+          margin: 0 auto;
+        }
+        height: 74px;
+
+        @media (min-width: 1024px) {
+          height: 103px;
+        }
+
+        &:first-child {
+          padding: 0;
+        }
+      }
+
+      /* generic cell */
+      td {
+        padding: 8px 16px;
+        min-height: 56px;
+        height: 56px;
+        min-width: 132px;
+
+        @media (min-width: 1024px) {
+          height: 72px;
+          min-height: 72px;
+          width: 150px;
+          min-width: 150px;
+        }
+
+        svg {
+          margin: 0 auto;
+        }
+      }
+
+      /* icons */
+      td {
+        &.yes {
+          svg {
+            path {
+              fill: var(--Table-tableIconHighlight);
+            }
+          }
+        }
+        &.no {
+          svg {
+            path {
+              fill: var(--Table-tableIcon);
+            }
+          }
+        }
+
+        &.maybe {
+          svg {
+            path {
+              stroke: var(--Table-tableIcon);
+            }
+          }
+        }
+      }
+
+      /* first column cell */
+      td:first-of-type {
+        font-weight: bold;
+        width: 150px;
+        min-width: 150px;
+        @media (min-width: 700px) {
+          width: 200px;
+          min-width: 200px;
+        }
+
+        @media (min-width: 1280px) {
+          width: 282px;
+          min-width: 282px;
+        }
+      }
+
+      /* border lines */
+      /* th {
+        border-top: 1px solid var(--Table-tableBorder);
+        border-bottom: 1px solid var(--Table-tableBorder);
+
+        &:first-child {
+          border-right: 1px solid var(--Table-tableBorder);
+          border-bottom: none;
+          border-top: none;
+        }
+        &:last-child {
+          border-right: 1px solid var(--Table-tableBorder);
+        }
+      } */
+
+      tr {
+        border-right: 1px solid var(--Table-tableBorder);
+
+        &:nth-child(2) {
+          td:first-child {
+            border-top: 1px solid var(--Table-tableBorder);
+          }
+        }
+
+        td:first-child {
+          border-left: 1px solid var(--Table-tableBorder) !important;
+        }
+
+        &:last-child {
+          td {
+            border-bottom: 1px solid var(--Table-tableBorder);
+          }
+        }
+
+        &:nth-child(odd) {
+          td {
+            border-left: 1px solid var(--Table-tableHighlightRowAlternate);
+
+            &:first-child {
+              border-left: none;
+            }
+          }
+        }
+        &:nth-child(even) {
+          td {
+            border-left: 1px solid var(--Table-tableHighlightRow);
+            &:first-child {
+              border-left: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

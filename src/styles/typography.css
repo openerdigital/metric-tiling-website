@@ -1,0 +1,154 @@
+@theme {
+  --font-heading:
+    ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-body:
+    ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+:root {
+  /* mobile font sizes */
+  --Font-Size-h1: 55px;
+  --Font-Size-h2: 40px;
+  --Font-Size-h3: 30px;
+  --Font-Size-h4: 26px;
+  --Font-Size-h5: 22px;
+  --Font-Size-h6: 18px;
+  --Font-Size-eyebrow: 14px;
+  --Font-Size-body-large: 18px;
+  --Font-Size-body-default: 18px;
+  --Font-Size-body-small: 16px;
+  --Font-Size-footnote: 12px;
+  /* desktop font sizes */
+  @media (min-width: 1280px) {
+    --Font-Size-h1: 72px;
+    --Font-Size-h2: 58px;
+    --Font-Size-h3: 48px;
+    --Font-Size-h4: 38px;
+    --Font-Size-h5: 32px;
+    --Font-Size-h6: 23px;
+    --Font-Size-eyebrow: 16px;
+    --Font-Size-body-large: 22px;
+    --Font-Size-body-default: 20px;
+    --Font-Size-body-small: 18px;
+    --Font-Size-footnote: 14px;
+  }
+  /* line heights */
+  --lineHeight-h1: 1.1;
+  --lineHeight-h2: 1.15;
+  --lineHeight-h3: 1.15;
+  --lineHeight-h4: 1.15;
+  --lineHeight-h5: 1.2;
+  --lineHeight-h6: 1.3;
+  --lineHeight-footnote: 1.3;
+  --lineHeight-body: 1.5;
+  /* body bold weight */
+  --font-weight-bold: 700;
+}
+
+@utility typography-heading {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-weight: bold;
+  font-family: var(--font-heading);
+  color: var(--Typography-Heading);
+}
+
+@utility typography-h1 {
+  @apply typography-heading;
+  font-size: var(--Font-Size-h1);
+  line-height: var(--lineHeight-h1);
+}
+
+@utility typography-h2 {
+  @apply typography-heading;
+  font-size: var(--Font-Size-h2);
+  line-height: var(--lineHeight-h2);
+}
+
+@utility typography-h3 {
+  @apply typography-heading;
+  font-size: var(--Font-Size-h3);
+  line-height: var(--lineHeight-h3);
+}
+
+@utility typography-h4 {
+  @apply typography-heading;
+  font-size: var(--Font-Size-h4);
+  line-height: var(--lineHeight-h4);
+}
+
+@utility typography-h5 {
+  @apply typography-heading;
+  font-size: var(--Font-Size-h5);
+  line-height: var(--lineHeight-h5);
+}
+
+@utility typography-h6 {
+  @apply typography-heading;
+  font-size: var(--Font-Size-h6);
+  line-height: var(--lineHeight-h6);
+}
+
+@utility typography-body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-body);
+  color: var(--Typography-Body);
+  font-size: var(--Font-Size-body-default);
+  line-height: var(--lineHeight-body);
+
+  strong {
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+@utility typography-eyebrow {
+  line-height: 1.3;
+  letter-spacing: 0.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: var(--Font-Size-eyebrow);
+  color: var(--Typography-Eyebrow);
+}
+
+@utility typography-bodyLarge {
+  @apply typography-heading;
+  font-weight: 600;
+  font-size: var(--Font-Size-body-large);
+  color: var(--Typography-BodyLarge);
+}
+
+@utility typography-bodySmall {
+  font-size: var(--Font-Size-body-small);
+}
+
+@utility typography-footnote {
+  font-size: var(--Font-Size-footnote);
+  line-height: var(--lineHeight-footnote);
+}
+
+@utility typography-link {
+  display: inline;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: currentColor;
+  color: var(--Typography-BodyLink);
+
+  &:hover {
+    text-decoration: none;
+    color: var(--Typography-BodyLinkHover);
+  }
+}
+
+@layer components {
+  body {
+    @apply typography-body;
+  }
+
+  .typography-body > a,
+  .typography-bodySmall > a,
+  .typography-footnote > a {
+    @apply typography-link;
+  }
+}

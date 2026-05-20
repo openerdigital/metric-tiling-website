@@ -1,0 +1,16 @@
+@utility wysiwyg {
+  > blockquote {
+    @apply relative border-b-2 border-t-2 px-1 py-3 text-center sm:px-3 sm:py-4 md:p-5;
+    @apply border-(--Global-blockquoteLines);
+  }
+
+  > blockquote > p {
+    @apply typography-h5 mb-[13px] mt-0;
+    @apply text-(--Global-blockquoteText);
+  }
+
+  > blockquote > cite {
+    @apply typography-bodySmall not-italic;
+    @apply text-(--Global-blockquoteAuthor);
+  }
+}

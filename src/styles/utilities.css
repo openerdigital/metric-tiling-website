@@ -1,0 +1,65 @@
+/* the element will be become full the size of it's next relative parent container */
+@utility absolute-full {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* the element will sit absolutely in the center (x & y) of its next relative parent container */
+@utility absolute-centered {
+  @apply absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%];
+}
+
+/* the elements before:pseudo will be become full the size of it's next relative parent container */
+/* mainly used for expanding a links clickable region */
+@utility expand-pseudo {
+  &:before {
+    @apply absolute left-0 top-0 z-10 h-full w-full content-[''];
+  }
+}
+/* the elemnt will use our default opacity hover style */
+@utility hover-opacity {
+  @apply duration-200 hover:opacity-70;
+}
+/* the element will be centered and have gutters/width set in the design theme */
+/* mx-auto! w-[calc(100%-2*theme(spacing.initGutter))] sm:w-[calc(100%-2*theme(spacing.smGutter))] max-w-mainColumnWidth */
+@utility main-column {
+  @apply max-w-mainColumnWidth mx-auto! w-[calc(100%-2*var(--spacing-initGutter))] sm:w-[calc(100%-2*var(--spacing-smGutter))];
+}
+
+/* the element will use the grid gaps found in the figma file */
+/* useful when elements are part of the 12-column design */
+@utility theme-grid-gaps {
+  @apply gap-init sm:gap-sm md:gap-md lg:gap-lg;
+}
+
+/* the element will be fill up the full screen horizontally */
+/* useful for breaking things out of a main-column */
+@utility force-full-width {
+  @apply mc:mx-[calc(-1*(100vw-var(--spacing-mainColumnWidth))/2)] -mx-(--spacing-initGutter) max-w-screen sm:-mx-(--spacing-smGutter) w-screen;
+}
+
+@utility disable-blur {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+@utility icon-color-* {
+  g,
+  path {
+    fill: --value([*]);
+    fill: --value(--color-*);
+  }
+}
+
+@utility icon-circle-* {
+  circle {
+    fill: --value(--color-*);
+  }
+}
+@utility av-columns-* {
+  width: calc((--value(integer) / 12 * (100% - (24px / 2))));
+}
+@utility av-offset-* {
+  margin-left: calc((--value(integer) / 12 * (100% + 24px)));
+}

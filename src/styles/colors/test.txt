@@ -1,0 +1,16 @@
+surfacePrimary /* a background color that will have light text on top*/
+surfaceSecondary /* another background color that will have light text on top*/
+surfaceLightPrimary /* a lighter background color that will have dark body text on top*/
+surfaceLightSecondary  /* a lighter background color that will have dark body text on top*/
+heading  /* a dark heading color */
+headingLight  /* a light heading color */
+bodyLarge  /* a dark color */
+bodyLargeLight
+
+body
+bodyLight
+textLightPrimary
+textLightSecondary
+
+iconPrimary 
+iconSecondary

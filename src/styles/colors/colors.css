@@ -1,0 +1,30 @@
+@theme {
+  --color-*: initial;
+
+  /* client theme colors only */
+  --color-primaryOne: #1e3a8a; /* Deep Steel Blue – trustworthy, strong */
+  --color-primaryTwo: #1d8cd6; /* Clean Water Blue – modern, bright accent */
+
+  --color-secondaryOne: #0b3d5b; /* Navy Slate – structure, depth */
+  --color-secondaryTwo: #0e7490; /* Teal Pipework – technical, clean */
+  --color-secondaryThree: #9ca3af; /* Cool Grey – neutral, professional */
+
+  --color-utilitarianOne: #ffffff; /* White */
+  --color-utilitarianTwo: #1f2937; /* Charcoal – headings, strong contrast */
+  --color-utilitarianThree: #374151; /* Dark Grey – body text */
+  --color-utilitarianFour: #6b7280; /* Medium Grey – UI elements */
+  --color-utilitarianFive: #d1d5db; /* Light Grey – borders, lines */
+  --color-utilitarianSix: #f3f4f6; /* Very Light Grey – soft backgrounds */
+  --color-utilitarianSeven: #e0f2fe; /* Pale Water Blue – subtle brand tint */
+  --color-utilitarianEight: #f0f9ff; /* Ultra Light Blue – clean background */
+
+  /* misc colors */
+  --color-inherit: inherit;
+  --color-transparent: transparent;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-silver: #e5e7eb;
+  --color-current: currentColor;
+}
+
+@import "./tokens.css";

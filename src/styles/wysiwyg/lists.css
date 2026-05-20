@@ -1,0 +1,60 @@
+@utility wysiwyg {
+  ul,
+  ol {
+    @apply grid list-none gap-1 md:gap-2;
+    counter-reset: list;
+  }
+
+  ul > li,
+  ol > li {
+    @apply relative pl-2 md:pl-[21px];
+  }
+
+  ul > li > ul,
+  ul > li > ol,
+  ol > li > ul,
+  ol > li > ol {
+    @apply mt-1 md:mt-2;
+  }
+
+  /* UL Dots */
+  > ul li::before {
+    content: "";
+    @apply absolute left-0 top-[9px] size-[6px] rounded-full md:size-[8px];
+    @apply bg-(--Typography-listBulletPrimary);
+  }
+
+  > ul > li > ul > li::before {
+    @apply bg-(--Typography-listBulletSecondary);
+  }
+
+  > ul > li > ul > li > ul > li > ul > li::before {
+    @apply bg-(--Typography-listBulletSecondary);
+  }
+
+  /* OL Numbers */
+  > ol li {
+    counter-increment: list;
+  }
+
+  > ol li::before {
+    content: counter(list);
+    @apply absolute left-0 top-0 font-bold;
+    @apply text-(--Typography-listBulletPrimary);
+  }
+
+  > ol > li > ol > li::before {
+    content: counter(list, lower-alpha);
+    @apply text-(--Typography-listBulletSecondary);
+  }
+
+  > ol > li > ol > li > ol > li::before {
+    content: counter(list, lower-roman);
+    @apply text-(--Typography-listBulletPrimary);
+  }
+
+  > ol > li > ol > li > ol > li > ol > li::before {
+    content: counter(list, upper-alpha);
+    @apply text-(--Typography-listBulletSecondary);
+  }
+}

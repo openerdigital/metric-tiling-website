@@ -1,0 +1,9 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#fff",
+    "titleBar.inactiveForeground": "#fff",
+    "titleBar.activeBackground": "#4083ff",
+    "titleBar.inactiveBackground": "#4083ff"
+  },
+  "window.title": "metric-tiling-website${separator}${activeEditorShort}${separator}${rootName}"
+}

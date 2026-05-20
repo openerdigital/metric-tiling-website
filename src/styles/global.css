@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import "./theme.css";
+@import "./config.css";
+@import "./utilities.css";
+@import "./colors/colors.css";
+@import "./colors/cms.css";
+@import "./typography.css";
+@import "./animation.css";
+@import "./wysiwyg/index.css";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
+
+  a,
+  button {
+    cursor: pointer;
+  }
+
+  div::-webkit-scrollbar {
+    display: none;
+  }
+
+  img,
+  video {
+    max-width: unset;
+  }
+}
+
+@utility scaleImageOnHover {
+  @apply [&_img]:duration-2500 overflow-hidden group-hover:[&_img]:scale-110;
+}

@@ -1,0 +1,7 @@
+@theme {
+  --radius-corners: 16px;
+  --radius-corners-lg: 24px;
+  --radius-arrows: 100%;
+  --radius-buttons: 60px;
+  --radius-tables: 0px;
+}

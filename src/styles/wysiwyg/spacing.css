@@ -1,0 +1,50 @@
+@utility wysiwyg {
+  > * {
+    /* default spacing */
+    @apply mb-2 md:mb-3;
+
+    /* extra margin top on heading */
+    &:is(h1, h2, h3, h4, h5, h6) {
+      @apply mt-4 md:mt-5;
+    }
+  }
+
+  > p:empty {
+    display: none;
+  }
+
+  /* Extra margin 1 components */
+  blockquote.wp-block-quote,
+  hr,
+  figure.wp-block-table {
+    @apply my-4 md:my-6;
+  }
+
+  > *:first-child {
+    @apply mt-0!;
+  }
+
+  > *:last-child {
+    @apply mb-0!;
+  }
+
+  /* Specific hr styling */
+  > hr {
+    @apply border-(--Global-dividerPrimary) mx-auto my-3 border md:my-6;
+  }
+
+  div.wp-block-column {
+    > *:first-child {
+      @apply mt-0!;
+    }
+
+    > *:last-child {
+      @apply mb-0!;
+    }
+  }
+}
+
+/* Extra margin 2 components */
+@utility wysiwyg-extraMargin {
+  @apply my-4 md:my-10;
+}

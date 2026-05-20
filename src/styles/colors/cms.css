@@ -1,0 +1,39 @@
+@theme {
+  /* shared cms colors - keep these stable across clients */
+  --color-cms-form-surface: #f8fafc;
+  --color-cms-form-input-bg: #ffffff;
+  --color-cms-form-border: #cbd5e1;
+  --color-cms-form-border-focus: #0e7490;
+  --color-cms-form-ring: color-mix(
+    in srgb,
+    var(--color-cms-form-border-focus) 30%,
+    transparent
+  );
+  --color-cms-form-label: #0f172a;
+  --color-cms-form-text: #0f172a;
+  --color-cms-form-placeholder: #64748b;
+  --color-cms-form-error: #dc2626;
+
+  --color-cms-btn-add-bg: #dcfce7;
+  --color-cms-btn-add-border: #86efac;
+  --color-cms-btn-add-text: #14532d;
+  --color-cms-btn-add-hover-bg: #bbf7d0;
+
+  --color-cms-btn-delete-bg: #fee2e2;
+  --color-cms-btn-delete-border: #fca5a5;
+  --color-cms-btn-delete-text: #991b1b;
+  --color-cms-btn-delete-hover-bg: #fecaca;
+
+  --color-cms-btn-save-bg: #155e75;
+  --color-cms-btn-save-border: #155e75;
+  --color-cms-btn-save-text: #f8fafc;
+  --color-cms-btn-save-hover-bg: #164e63;
+
+  --color-cms-sidebar-bg: #f8fafc;
+  --color-cms-sidebar-border: #cbd5e1;
+  --color-cms-sidebar-header-bg: #e2e8f0;
+  --color-cms-sidebar-header-text: #0f172a;
+  --color-cms-sidebar-item-bg: #ffffff;
+  --color-cms-sidebar-item-hover-bg: #e0f2fe;
+  --color-cms-sidebar-item-text: #0f172a;
+}

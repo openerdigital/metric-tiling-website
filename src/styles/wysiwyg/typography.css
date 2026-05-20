@@ -1,0 +1,39 @@
+@utility wysiwyg {
+  > h1 {
+    @apply typography-h1;
+  }
+  > h2 {
+    @apply typography-h2;
+  }
+  > h3 {
+    @apply typography-h3;
+  }
+  > h4 {
+    @apply typography-h4;
+  }
+  > h5 {
+    @apply typography-h5;
+  }
+  > h6 {
+    @apply typography-h6;
+  }
+
+  .has-large-font-size {
+    @apply typography-bodyLarge;
+  }
+  .has-small-font-size {
+    @apply text-[13px];
+  }
+
+  > p > a,
+  li > a {
+    @apply typography-link;
+  }
+
+  .has-text-align-center {
+    @apply text-center;
+  }
+  .has-text-align-right {
+    @apply text-right;
+  }
+}

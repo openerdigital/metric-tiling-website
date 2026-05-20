@@ -1,0 +1,98 @@
+@utility wysiwyg {
+  > figure.wp-block-table {
+    --table-gutter: var(--spacing-initGutter);
+    overflow: scroll;
+    width: auto;
+    max-width: 100vw;
+    padding-left: var(--table-gutter);
+    padding-right: var(--table-gutter);
+    margin-right: calc(-2 * var(--table-gutter));
+    transform: translateX(calc(-1 * var(--table-gutter)));
+    @media (min-width: 700px) {
+      --table-gutter: var(--spacing-smGutter);
+    }
+
+    @media (min-width: 1024px) {
+      --table-gutter: 0px;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  /* table */
+  > figure.wp-block-table > table {
+    @apply rounded-tables min-w-full border-collapse overflow-hidden border;
+    border-color: var(--Table-tableBorder);
+  }
+
+  > figure.wp-block-table > table.has-fixed-layout {
+    table-layout: fixed;
+
+    td,
+    th {
+      white-space: initial;
+    }
+  }
+
+  /* general cell styles */
+  > figure.wp-block-table th,
+  > figure.wp-block-table td {
+    @apply typography-bodySmall min-w-[132px] p-1 text-left lg:p-2;
+
+    &.has-text-align-center {
+      text-align: center;
+    }
+
+    &.has-text-align-right {
+      text-align: right;
+    }
+  }
+
+  /* specific cell styles */
+  > figure.wp-block-table th {
+    @apply whitespace-nowrap;
+    background-color: var(--Table-tableHeading);
+    color: var(--Table-tableHeadingText);
+  }
+
+  > figure.wp-block-table td {
+    background-color: var(--Table-tableRow);
+    color: var(--Table-tableRowText);
+  }
+
+  /* odd row color */
+  > figure.wp-block-table tr:nth-child(even) td {
+    background-color: var(--Table-tableRowAlternate);
+  }
+
+  /* first row highlight */
+  > figure.wp-block-table.is-style-highlight-first-column {
+    th:nth-child(1) {
+      background-color: var(--Table-tableHeadingHighlight);
+      color: var(--Table-tableHeadingHighlightText);
+    }
+
+    tbody > tr:nth-child(odd) > td:nth-child(1) {
+      background-color: var(--Table-tableHighlightRow);
+      color: var(--Table-tableHighlightText);
+    }
+
+    tbody > tr:nth-child(even) > td:nth-child(1) {
+      background-color: var(--Table-tableHighlightRowAlternate);
+      color: var(--Table-tableHighlightText);
+    }
+  }
+
+  /* footer */
+  > figure.wp-block-table tfoot td {
+    background-color: #888a93;
+    color: white;
+  }
+
+  /* figcaption */
+  > figure.wp-block-table figcaption {
+    @apply typography-footnote bg-(--Global-imageCaptionBG) text-(--Global-imageCaptionText) p-2;
+  }
+}

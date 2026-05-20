@@ -1,0 +1,30 @@
+{
+  "last_verified": "2026-03-26",
+  "shared_supabase": {
+    "project_ref": "dtutsxzhrmmdizcpdvey",
+    "url": "https://dtutsxzhrmmdizcpdvey.supabase.co",
+    "shared_client_table": "public.clients",
+    "project_key_env_var": "CLIENT_ID",
+    "membership_rule": "Include a repo only if its .env.local points at the same NEXT_PUBLIC_SUPABASE_URL and defines CLIENT_ID."
+  },
+  "projects": [
+    {
+      "name": "client-template",
+      "path": "/Users/justinlow/Documents/projects/client-template",
+      "client_id": "1a9f21c3-e47b-4dc8-adad-69cac2c29489",
+      "website_url": "https://client-template-od.vercel.app",
+      "role": "template",
+      "status": "confirmed_local_checkout",
+      "notes": "Current workspace and source template."
+    },
+    {
+      "name": "unearthed-civil-website",
+      "path": "/Users/justinlow/Documents/projects/unearthed-civil-website",
+      "client_id": "2f62ebed-f605-44c8-a458-8905abecd4b9",
+      "website_url": "https://unearthed-civil-website.vercel.app",
+      "role": "client",
+      "status": "confirmed_local_checkout",
+      "notes": "Confirmed sibling project using the shared Supabase instance."
+    }
+  ]
+}

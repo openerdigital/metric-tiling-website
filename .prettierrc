@@ -1,0 +1,25 @@
+{
+  "endOfLine": "lf",
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "printWidth": 80,
+
+  "importOrder": [
+    "^@core/(.*)$",
+    "^@server/(.*)$",
+    "^@primitives/(.*)$",
+    "^@screens/(.*)$",
+    "^@ui/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "plugins": [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "tailwindStylesheet": "./styles/theme.css",
+  "tailwindFunctions": ["cn", "cva"]
+}

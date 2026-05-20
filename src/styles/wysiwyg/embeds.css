@@ -1,0 +1,42 @@
+@utility wysiwyg {
+  .twitter-tweet,
+  .is-provider-twitter {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .mapEmbed {
+    position: relative;
+    padding-top: 66.7%;
+
+    @media (min-width: 1024px) {
+      padding-top: 53.8%;
+    }
+
+    iframe {
+      @apply absolute-full;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .wp-block-embed-soundcloud iframe {
+    width: 100%;
+  }
+
+  .avenue-embed {
+    @apply flex flex-col items-center justify-center;
+    max-width: unset;
+  }
+
+  iframe {
+    @apply block w-full max-w-full;
+  }
+
+  > iframe {
+    display: block;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}

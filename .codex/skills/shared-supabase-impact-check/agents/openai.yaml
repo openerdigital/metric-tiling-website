@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shared Supabase Impact Check"
+  short_description: "Check sibling client repos for breaking changes after shared Supabase updates"
+  default_prompt: "Load the shared project manifest, inspect the Supabase database change, check each listed repo for breaking references, fix only broken projects, and skip additive non-breaking changes."

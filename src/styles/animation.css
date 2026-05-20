@@ -1,0 +1,51 @@
+@theme {
+  --animate-openRadixAccordion: openRadixAccordion 300ms ease-out forwards;
+  --animate-closeRadixAccordion: closeRadixAccordion 300ms ease-out forwards;
+  --animate-openSectionNav: openSectionNav 300ms ease-out forwards;
+  --animate-closeSectionNav: closeSectionNav 300ms ease-out forwards;
+
+  @keyframes openRadixAccordion {
+    0% {
+      height: 0;
+      opacity: 0;
+      display: block;
+    }
+    100% {
+      height: var(--radix-accordion-content-height);
+      opacity: 1;
+    }
+  }
+
+  @keyframes closeRadixAccordion {
+    0% {
+      height: var(--radix-accordion-content-height);
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      opacity: 0;
+    }
+  }
+
+  @keyframes openSectionNav {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    100% {
+      height: var(--component-height);
+      opacity: 1;
+    }
+  }
+
+  @keyframes closeSectionNav {
+    0% {
+      height: var(--component-height);
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      opacity: 0;
+    }
+  }
+}

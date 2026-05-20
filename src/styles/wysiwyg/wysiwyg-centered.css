@@ -1,0 +1,49 @@
+@utility wysiwyg-centered {
+  @apply wysiwyg;
+
+  > * {
+    @apply lg:av-columns-6 lg:av-offset-3;
+  }
+
+  &.widerColumn {
+    > * {
+      @apply lg:av-columns-8 lg:av-offset-2;
+    }
+  }
+
+  > *:is(
+      .wysiwyg-mediumWidth,
+      hr,
+      figure.wp-block-image:not(.size-medium),
+      blockquote,
+      iframe,
+      figure.wp-block-table
+    ) {
+    @apply lg:av-columns-8 lg:av-offset-2;
+  }
+
+  > *.wysiwyg-largeWidth {
+    @apply lg:av-columns-10 lg:av-offset-1;
+  }
+
+  > *:is(.wysiwyg-wideWidth, hr.is-style-wide) {
+    @apply md:av-columns-12! md:av-offset-0!;
+  }
+
+  > *:is(.wysiwyg-fullWidth, figure.alignwide, figure.alignfull) {
+    @apply force-full-width!;
+  }
+}
+
+@utility wysiwyg-mediumWidth {
+  width: auto;
+}
+@utility wysiwyg-largeWidth {
+  width: auto;
+}
+@utility wysiwyg-wideWidth {
+  width: auto;
+}
+@utility wysiwyg-fullWidth {
+  width: auto;
+}

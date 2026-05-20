@@ -1,0 +1,120 @@
+@theme {
+  /* Typography */
+  --Typography-Heading: var(--color-secondaryOne);
+  --Typography-Body: var(--color-utilitarianThree);
+  --Typography-Eyebrow: var(--color-secondaryTwo);
+  --Typography-BodyLarge: var(--color-secondaryOne);
+  --Typography-BodyLink: var(--color-primaryTwo);
+  --Typography-BodyLinkHover: var(--color-primaryOne);
+
+  /* Hero */
+  --Hero-Bg: var(--color-secondaryOne);
+  --Hero-Text: var(--color-white);
+
+  /* RotatingFeatures */
+  --RotatingFeatures-Bg: var(--color-utilitarianFive);
+  --RotatingFeatures-ItemHoverBg: color-mix(
+    in srgb,
+    var(--color-secondaryOne) 20%,
+    transparent
+  );
+  --RotatingFeatures-ItemActiveBg: var(--color-secondaryOne);
+  --RotatingFeatures-ItemActiveText: var(--color-white);
+  --RotatingFeatures-ImageBg: var(--color-black);
+
+  /* FullWidthBanner1 */
+  --FullWidthBanner1-Heading: var(--color-white);
+  --FullWidthBanner1-SubHeading: var(--color-white);
+  --FullWidthBanner1-Body: var(--color-white);
+
+  /* FullWidthBanner2 */
+  --FullWidthBanner2-CardBg: var(--color-secondaryTwo);
+  --FullWidthBanner2-Heading: var(--color-white);
+  --FullWidthBanner2-Subheading: var(--color-white);
+  --FullWidthBanner2-Body: var(--color-white);
+
+  /* Accordion */
+  --Accordion-RootBorder: var(--color-secondaryOne);
+  --Accordion-ItemBorder: var(--color-white);
+  --Accordion-HeaderBg: var(--color-primaryOne);
+  --Accordion-HeaderText: var(--color-white);
+  --Accordion-Icon: var(--color-white);
+  --Accordion-ContentBg: var(--color-white);
+
+  /* FiftyFiftyCTA */
+  --FiftyFiftyCTA-Bg: var(--color-utilitarianFive);
+  --FiftyFiftyCTA-Heading: var(--color-black);
+  --FiftyFiftyCTA-Subheading: var(--color-secondaryOne);
+
+  /* ContactForm */
+  --ContactForm-SectionBg: var(--color-silver);
+  --ContactForm-Icon: var(--color-secondaryTwo);
+  --ContactForm-SocialIcon: var(--color-primaryOne);
+  --ContactForm-ErrorText: var(--color-secondaryTwo);
+  --ContactForm-LabelActiveText: var(--color-secondaryTwo);
+  --ContactForm-InputBorderDefault: var(--color-black);
+  --ContactForm-InputBorderActive: var(--color-secondaryTwo);
+  --ContactForm-SelectBg: var(--color-white);
+  --ContactForm-SelectOptionHoverBg: var(--color-primaryOne);
+  --ContactForm-SelectOptionHoverText: var(--color-white);
+
+  /* NavBar */
+  --NavBar-ItemText: var(--color-white);
+  --NavBar-ItemUnderline: var(--color-white);
+  --NavBar-OverlayIcon: var(--color-white);
+  --NavBar-MobileBg: var(--color-utilitarianTwo);
+  --NavBar-SolidBg: var(--color-white);
+  --NavBar-HamburgerLine: var(--color-black);
+  --NavBar-HamburgerLineOverlay: var(--color-white);
+
+  /* Cards */
+  --Cards-CardBg: var(--color-white);
+  --Cards-CardHeading: var(--color-secondaryOne);
+  --Cards-CardText: var(--color-utilitarianThree);
+
+  /* Footer */
+  --Footer-Bg: var(--color-primaryOne);
+  --Footer-Text: var(--color-white);
+  --Footer-Underline: var(--color-white);
+
+  /* Testimonials */
+  --Testimonials-QuoteIcon: var(--color-primaryTwo);
+  --Testimonials-QuoteText: var(--color-secondaryOne);
+  --Testimonials-AuthorDash: var(--color-secondaryThree);
+  --Testimonials-AuthorText: var(--color-black);
+  --Testimonials-DotActive: var(--color-secondaryOne);
+  --Testimonials-DotInactive: color-mix(
+    in srgb,
+    var(--color-black) 20%,
+    transparent
+  );
+  --Testimonials-DotHover: color-mix(
+    in srgb,
+    var(--color-black) 40%,
+    transparent
+  );
+
+  /* Primitives - Button */
+  --Button-PrimaryText: var(--color-white);
+  --Button-PrimaryBg: var(--color-primaryOne);
+  --Button-PrimaryBorder: var(--color-primaryOne);
+  --Button-PrimaryHoverBg: var(--color-primaryTwo);
+  --Button-PrimaryHoverBorder: var(--color-primaryTwo);
+
+  --Button-SecondaryText: var(--color-white);
+  --Button-SecondaryBg: var(--color-transparent);
+  --Button-SecondaryBorder: var(--color-white);
+  --Button-SecondaryHoverBg: var(--color-primaryOne);
+  --Button-SecondaryHoverBorder: var(--color-primaryOne);
+  --Button-SecondaryHoverText: var(--color-white);
+
+  --Button-TertiaryText: var(--color-white);
+  --Button-TertiaryBg: var(--color-primaryTwo);
+  --Button-TertiaryBorder: var(--color-primaryTwo);
+  --Button-TertiaryHoverBg: var(--color-secondaryOne);
+  --Button-TertiaryHoverBorder: var(--color-secondaryOne);
+
+  /* Primitives - Arrow */
+  --Arrow-Icon: var(--color-primaryOne);
+  --Arrow-IconHover: var(--color-primaryTwo);
+}

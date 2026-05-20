@@ -1,0 +1,24 @@
+@utility wysiwyg {
+  figure.wp-block-image img {
+    @apply block w-full object-cover;
+  }
+
+  figure.wp-block-image.size-medium {
+    @apply max-w-[300px] md:max-w-[500px];
+  }
+  figure.wp-block-image:not(.alignfull) {
+    border-radius: var(--radius-corners);
+  }
+  figure.wp-block-image:not(.alignfull).hasCaption {
+    border-radius: var(--radius-corners) var(--radius-corners) 0 0;
+  }
+
+  figure.wp-block-image:not(.alignfull) figcaption {
+    border-radius: 0 0 var(--radius-corners) var(--radius-corners);
+  }
+
+  figure.wp-block-gallery figcaption,
+  figure.wp-block-image figcaption {
+    @apply typography-footnote bg-(--Global-imageCaptionBG) text-(--Global-imageCaptionText) p-2;
+  }
+}
