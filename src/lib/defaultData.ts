@@ -2,9 +2,9 @@ const defaultData = {
   hero: {
     image: "",
     video: "/hero-video.mp4",
-    heading: "Reliable Carpentry Services in Adelaide",
+    heading: "Premium Tiling & Bathroom Renovations in Adelaide",
     paragraph:
-      "Smith Carpentry provides quality residential and small commercial carpentry across Adelaide. From repairs to renovations, you deal directly with a licensed local carpenter.",
+      "Metric Tiling SA delivers high quality tiling, waterproofing and full bathroom renovations across Adelaide. Reliable service, clear communication and precision workmanship from start to finish.",
     button1: "Our Services",
     button2: "Get in touch",
   },
@@ -16,86 +16,86 @@ const defaultData = {
       {
         image:
           "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062244124_pexels-monica-4756489.jpg",
-        heading: "Home Renovations",
+        heading: "New Home Tiling",
         paragraph:
-          "Carpentry for kitchen, bathroom, and internal renovations. Framing, fit-outs, and finishing work done properly.",
+          "Complete wall and floor tiling for new homes, delivered with accurate set-outs, clean lines and a durable finish.",
       },
       {
         image:
           "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062358881_pexels-ron-lach-8832032.jpg",
-        heading: "Decking & Pergolas",
+        heading: "Bathroom Renovations",
         paragraph:
-          "Custom timber decks and pergolas built to suit your space, lifestyle, and budget.",
+          "Full bathroom renovation services, from demolition and preparation through to waterproofing, tiling and finishing details.",
       },
       {
         image:
           "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062306656_pexels-ron-lach-8829875.jpg",
-        heading: "Framing & Structural Work",
+        heading: "Waterproofing",
         paragraph:
-          "Wall framing, extensions, and structural carpentry for new builds and alterations.",
+          "Professional wet area waterproofing for bathrooms, laundries, balconies and other tiled spaces.",
       },
       {
         image:
           "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062317695_pexels-burst-544966_2.jpg",
-        heading: "Repairs & Maintenance",
+        heading: "Renovation Tiling",
         paragraph:
-          "Fixing damaged timber, doors, floors, and general wear and tear around the home.",
+          "Careful tiling for kitchen, laundry, bathroom and living area upgrades, matched to the style and needs of your home.",
       },
       {
         image:
           "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062327306_pexels-shkrabaanthony-5466146.jpg",
-        heading: "Custom Joinery & Fit-outs",
+        heading: "Commercial Tiling",
         paragraph:
-          "Shelving, wardrobes, storage, and custom carpentry solutions built to measure.",
+          "Reliable tiling solutions for builders, fit-outs, offices, retail spaces and light commercial projects across Adelaide.",
       },
       {
         image:
           "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062334560_pexels-mikael-blomkvist-8961298.jpg",
-        heading: "Small Commercial Carpentry",
+        heading: "Outdoor & Feature Tiling",
         paragraph:
-          "Shop fit-outs, offices, and light commercial carpentry across Adelaide.",
+          "Porcelain, stone and feature tile installations for patios, alfresco areas, splashbacks and statement walls.",
       },
     ],
   },
 
   whyChooseUs: {
     navigationLabel: "Why Us",
-    heading: "Why Choose Smith Carpentry",
+    heading: "Why Choose Metric Tiling SA",
     items: [
       {
         image:
           "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062377537_pexels-ono-kosuki-5974406.jpg",
-        heading: "Local Adelaide Carpenter",
+        heading: "Adelaide Based",
         paragraph:
-          "Based in Adelaide and servicing surrounding suburbs. No subcontractors or call centres.",
+          "Servicing Adelaide and surrounding suburbs for homeowners, builders and commercial clients.",
       },
       {
         image:
           "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062389231_pexels-tima-miroshnichenko-5059645.jpg",
-        heading: "Years of Hands-On Experience",
+        heading: "Precision Workmanship",
         paragraph:
-          "Practical experience across renovations, repairs, and custom carpentry.",
+          "Every set-out, cut, joint and finish is handled with care so the end result looks sharp and lasts.",
       },
       {
         image:
           "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062416031_pexels-mikael-blomkvist-8961623.jpg",
-        heading: "Upfront, Honest Pricing",
+        heading: "Clear Communication",
         paragraph:
-          "Clear quotes with no hidden costs or surprises once the job starts.",
+          "Straightforward advice, responsive updates and clear expectations from quote to completion.",
       },
       {
         image:
           "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062399099_pexels-tima-miroshnichenko-6790107.jpg",
-        heading: "Quality Workmanship",
+        heading: "Durable Premium Finishes",
         paragraph:
-          "Jobs are done properly, with attention to detail and materials that last.",
+          "We use proven preparation methods and quality products to create tiled surfaces built for everyday use.",
       },
       {
         image:
           "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062429741_pexels-cristian-rojas-8447858.jpg",
-        heading: "Licensed & Insured",
+        heading: "Trusted by Builders & Homeowners",
         paragraph:
-          "Fully licensed and insured for peace of mind on every job, big or small.",
+          "Flexible service for new homes, renovations and commercial works, with consistent standards on every project.",
       },
     ],
     button: "Request a Quote",
@@ -105,12 +105,12 @@ const defaultData = {
     navigationLabel: "About",
     image:
       "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062458537_pexels-ono-kosuki-5973899.jpg",
-    heading: "The Story Behind Smith Carpentry",
+    heading: "About Metric Tiling SA",
     paragraph1:
-      "Smith Carpentry is an Adelaide-based carpentry business focused on reliable, high-quality work for homeowners and small businesses.",
+      "Metric Tiling SA is an Adelaide-based tiling business specialising in high quality tiling, waterproofing and full bathroom renovations.",
     paragraph2:
-      "You deal directly with the carpenter doing the work, ensuring clear communication, realistic timelines, and a job done right the first time.",
-    button: "Speak Directly With Us",
+      "We work with builders and homeowners who want reliable service, tidy workmanship and a premium finish that holds up long after handover.",
+    button: "Speak Directly With Metric Tiling",
   },
 
   testimonials: {
@@ -118,22 +118,22 @@ const defaultData = {
     items: [
       {
         quote:
-          "On time, honest pricing, and quality work. Would definitely recommend.",
+          "The finish was excellent and the communication was clear the whole way through.",
         author: "Sarah M, Prospect",
       },
       {
         quote:
-          "Great workmanship and very easy to deal with. Deck turned out exactly how we wanted.",
+          "Our bathroom renovation came together beautifully. Reliable, tidy and easy to deal with.",
         author: "James R, Glenelg",
       },
       {
         quote:
-          "Clear communication from start to finish and the job was done properly.",
+          "Metric Tiling SA delivered exactly what we needed for our renovation project.",
         author: "Emily K, Seaford",
       },
       {
         quote:
-          "Fixed several issues left by a previous builder. Professional and reliable.",
+          "Professional tiling work with great attention to detail. Happy to recommend.",
         author: "Tom W, Norwood",
       },
     ],
@@ -173,12 +173,12 @@ const defaultData = {
       {
         question: "Do you service all of Adelaide?",
         answer:
-          "Yes. Smith Carpentry services metropolitan Adelaide and surrounding suburbs.",
+          "Yes. Metric Tiling SA services metropolitan Adelaide and surrounding suburbs.",
       },
       {
-        question: "Are you licensed and insured?",
+        question: "Do you handle waterproofing?",
         answer:
-          "Yes. All work is carried out by a licensed and fully insured carpenter.",
+          "Yes. We provide waterproofing for bathrooms, laundries, balconies and other wet areas as part of the tiling process.",
       },
       {
         question: "Do you provide free quotes?",
@@ -188,7 +188,7 @@ const defaultData = {
       {
         question: "What types of jobs do you take on?",
         answer:
-          "We handle repairs, renovations, decking, framing, and custom carpentry projects.",
+          "We take on new homes, renovations, commercial tiling, waterproofing and full bathroom renovation projects.",
       },
       {
         question: "How far in advance should I book?",
@@ -202,21 +202,21 @@ const defaultData = {
     navigationLabel: "Contact",
     heading: "Get a Quote",
     description:
-      "Call or send an enquiry to discuss your carpentry project. We’ll get back to you as soon as possible.",
+      "Call or send an enquiry to discuss your tiling, waterproofing or bathroom renovation project. We’ll get back to you as soon as possible.",
     selectOptions: [
       "General Enquiry",
-      "Repairs & Maintenance",
-      "Renovations",
-      "Decking & Pergolas",
-      "Commercial Work",
+      "New Home Tiling",
+      "Bathroom Renovation",
+      "Waterproofing",
+      "Commercial Tiling",
     ],
     button: "Submit Enquiry",
   },
 
   contactInfo: {
-    phone: "0412123123",
-    email: "admin@smithcarpenty.com.au",
-    address: "123 Fake St, Adelaide SA 5000",
+    phone: "0424 556 535",
+    email: "metrictiling@outlook.com",
+    address: "Adelaide SA",
     instagram: "https://www.instagram.com/",
     facebook: "https://www.facebook.com/",
     linkedIn: "https://au.linkedin.com/",
@@ -227,24 +227,24 @@ const defaultData = {
   feature1: {
     image:
       "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062749311_pexels-cottonbro-7484167.jpg",
-    heading: "Upfront Quotes. No Surprises.",
-    subheading: "Know the cost before the work starts.",
+    heading: "New Homes. Renovations. Commercial.",
+    subheading: "One tiling team for projects of every size.",
     paragraph:
-      "Every job is quoted clearly and honestly. You’ll know exactly what’s included, what it costs, and when the work will be completed — before anything begins.",
+      "From builder packages to bathroom upgrades and commercial fit-outs, Metric Tiling SA brings dependable scheduling, practical advice and premium finishes to every job.",
     button: "Request a Free Quote",
   },
 
   feature2: {
     image:
       "https://d3pat9x9du4pypkw.public.blob.vercel-storage.com/1773062775070_pexels-ninobur-17410515.jpg",
-    heading: "Licensed. Insured. Legit.",
-    subheading: "Your home is protected.",
+    heading: "Waterproofed Properly. Tiled Precisely.",
+    subheading: "Preparation matters as much as the finish.",
     paragraph:
-      "All work is carried out by a fully licensed and insured Adelaide carpenter. That means your project meets regulations, and you’re covered from start to finish.",
+      "We focus on the details that protect your investment: correct substrate preparation, reliable waterproofing systems, accurate falls and carefully finished tile work.",
     button: "Get a Quote",
   },
   configuration: {
-    businessName: "Smith Carpentry",
+    businessName: "Metric Tiling SA",
     copyrightText: "All Rights Reserved.",
   },
 };

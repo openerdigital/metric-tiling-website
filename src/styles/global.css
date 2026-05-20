@@ -9,6 +9,10 @@
 @import "./wysiwyg/index.css";
 
 @layer base {
+  body {
+    background: var(--color-brandBackground);
+  }
+
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;

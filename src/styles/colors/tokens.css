@@ -1,26 +1,26 @@
 @theme {
   /* Typography */
-  --Typography-Heading: var(--color-secondaryOne);
-  --Typography-Body: var(--color-utilitarianThree);
-  --Typography-Eyebrow: var(--color-secondaryTwo);
-  --Typography-BodyLarge: var(--color-secondaryOne);
-  --Typography-BodyLink: var(--color-primaryTwo);
-  --Typography-BodyLinkHover: var(--color-primaryOne);
+  --Typography-Heading: var(--color-brandWhite);
+  --Typography-Body: var(--color-brandGreyLight);
+  --Typography-Eyebrow: var(--color-brandGreyMid);
+  --Typography-BodyLarge: var(--color-brandWhite);
+  --Typography-BodyLink: var(--color-brandWhite);
+  --Typography-BodyLinkHover: var(--color-brandGreyLight);
 
   /* Hero */
   --Hero-Bg: var(--color-secondaryOne);
   --Hero-Text: var(--color-white);
 
   /* RotatingFeatures */
-  --RotatingFeatures-Bg: var(--color-utilitarianFive);
+  --RotatingFeatures-Bg: var(--color-brandBackground);
   --RotatingFeatures-ItemHoverBg: color-mix(
     in srgb,
-    var(--color-secondaryOne) 20%,
+    var(--color-brandGreyDark) 45%,
     transparent
   );
-  --RotatingFeatures-ItemActiveBg: var(--color-secondaryOne);
-  --RotatingFeatures-ItemActiveText: var(--color-white);
-  --RotatingFeatures-ImageBg: var(--color-black);
+  --RotatingFeatures-ItemActiveBg: var(--color-brandGreyDark);
+  --RotatingFeatures-ItemActiveText: var(--color-brandWhite);
+  --RotatingFeatures-ImageBg: var(--color-brandBackground);
 
   /* FullWidthBanner1 */
   --FullWidthBanner1-Heading: var(--color-white);
@@ -28,93 +28,93 @@
   --FullWidthBanner1-Body: var(--color-white);
 
   /* FullWidthBanner2 */
-  --FullWidthBanner2-CardBg: var(--color-secondaryTwo);
-  --FullWidthBanner2-Heading: var(--color-white);
-  --FullWidthBanner2-Subheading: var(--color-white);
-  --FullWidthBanner2-Body: var(--color-white);
+  --FullWidthBanner2-CardBg: var(--color-brandGreyDark);
+  --FullWidthBanner2-Heading: var(--color-brandWhite);
+  --FullWidthBanner2-Subheading: var(--color-brandWhite);
+  --FullWidthBanner2-Body: var(--color-brandWhite);
 
   /* Accordion */
-  --Accordion-RootBorder: var(--color-secondaryOne);
-  --Accordion-ItemBorder: var(--color-white);
-  --Accordion-HeaderBg: var(--color-primaryOne);
-  --Accordion-HeaderText: var(--color-white);
-  --Accordion-Icon: var(--color-white);
-  --Accordion-ContentBg: var(--color-white);
+  --Accordion-RootBorder: var(--color-brandGreyDark);
+  --Accordion-ItemBorder: var(--color-brandGreyDark);
+  --Accordion-HeaderBg: var(--color-brandGreyDark);
+  --Accordion-HeaderText: var(--color-brandWhite);
+  --Accordion-Icon: var(--color-brandWhite);
+  --Accordion-ContentBg: var(--color-brandBackground);
 
   /* FiftyFiftyCTA */
-  --FiftyFiftyCTA-Bg: var(--color-utilitarianFive);
-  --FiftyFiftyCTA-Heading: var(--color-black);
-  --FiftyFiftyCTA-Subheading: var(--color-secondaryOne);
+  --FiftyFiftyCTA-Bg: var(--color-brandBackground);
+  --FiftyFiftyCTA-Heading: var(--color-brandWhite);
+  --FiftyFiftyCTA-Subheading: var(--color-brandGreyLight);
 
   /* ContactForm */
-  --ContactForm-SectionBg: var(--color-silver);
-  --ContactForm-Icon: var(--color-secondaryTwo);
-  --ContactForm-SocialIcon: var(--color-primaryOne);
-  --ContactForm-ErrorText: var(--color-secondaryTwo);
-  --ContactForm-LabelActiveText: var(--color-secondaryTwo);
-  --ContactForm-InputBorderDefault: var(--color-black);
-  --ContactForm-InputBorderActive: var(--color-secondaryTwo);
-  --ContactForm-SelectBg: var(--color-white);
-  --ContactForm-SelectOptionHoverBg: var(--color-primaryOne);
-  --ContactForm-SelectOptionHoverText: var(--color-white);
+  --ContactForm-SectionBg: var(--color-brandBackground);
+  --ContactForm-Icon: var(--color-brandGreyLight);
+  --ContactForm-SocialIcon: var(--color-brandWhite);
+  --ContactForm-ErrorText: var(--color-brandGreyLight);
+  --ContactForm-LabelActiveText: var(--color-brandGreyLight);
+  --ContactForm-InputBorderDefault: var(--color-brandGreyDark);
+  --ContactForm-InputBorderActive: var(--color-brandWhite);
+  --ContactForm-SelectBg: var(--color-brandWhite);
+  --ContactForm-SelectOptionHoverBg: var(--color-brandGreyDark);
+  --ContactForm-SelectOptionHoverText: var(--color-brandWhite);
 
   /* NavBar */
   --NavBar-ItemText: var(--color-white);
   --NavBar-ItemUnderline: var(--color-white);
   --NavBar-OverlayIcon: var(--color-white);
-  --NavBar-MobileBg: var(--color-utilitarianTwo);
-  --NavBar-SolidBg: var(--color-white);
-  --NavBar-HamburgerLine: var(--color-black);
+  --NavBar-MobileBg: var(--color-brandBackground);
+  --NavBar-SolidBg: var(--color-brandBackground);
+  --NavBar-HamburgerLine: var(--color-brandWhite);
   --NavBar-HamburgerLineOverlay: var(--color-white);
 
   /* Cards */
-  --Cards-CardBg: var(--color-white);
-  --Cards-CardHeading: var(--color-secondaryOne);
-  --Cards-CardText: var(--color-utilitarianThree);
+  --Cards-CardBg: var(--color-brandWhite);
+  --Cards-CardHeading: var(--color-brandBackground);
+  --Cards-CardText: var(--color-brandGreyDark);
 
   /* Footer */
-  --Footer-Bg: var(--color-primaryOne);
-  --Footer-Text: var(--color-white);
-  --Footer-Underline: var(--color-white);
+  --Footer-Bg: var(--color-brandBackground);
+  --Footer-Text: var(--color-brandWhite);
+  --Footer-Underline: var(--color-brandGreyLight);
 
   /* Testimonials */
-  --Testimonials-QuoteIcon: var(--color-primaryTwo);
-  --Testimonials-QuoteText: var(--color-secondaryOne);
-  --Testimonials-AuthorDash: var(--color-secondaryThree);
-  --Testimonials-AuthorText: var(--color-black);
-  --Testimonials-DotActive: var(--color-secondaryOne);
+  --Testimonials-QuoteIcon: var(--color-brandGreyLight);
+  --Testimonials-QuoteText: var(--color-brandWhite);
+  --Testimonials-AuthorDash: var(--color-brandGreyDark);
+  --Testimonials-AuthorText: var(--color-brandGreyLight);
+  --Testimonials-DotActive: var(--color-brandWhite);
   --Testimonials-DotInactive: color-mix(
     in srgb,
-    var(--color-black) 20%,
+    var(--color-brandGreyDark) 60%,
     transparent
   );
   --Testimonials-DotHover: color-mix(
     in srgb,
-    var(--color-black) 40%,
+    var(--color-brandGreyLight) 75%,
     transparent
   );
 
   /* Primitives - Button */
-  --Button-PrimaryText: var(--color-white);
-  --Button-PrimaryBg: var(--color-primaryOne);
-  --Button-PrimaryBorder: var(--color-primaryOne);
-  --Button-PrimaryHoverBg: var(--color-primaryTwo);
-  --Button-PrimaryHoverBorder: var(--color-primaryTwo);
+  --Button-PrimaryText: var(--color-brandWhite);
+  --Button-PrimaryBg: var(--color-brandBackground);
+  --Button-PrimaryBorder: var(--color-brandBackground);
+  --Button-PrimaryHoverBg: var(--color-brandGreyDark);
+  --Button-PrimaryHoverBorder: var(--color-brandGreyDark);
 
-  --Button-SecondaryText: var(--color-white);
+  --Button-SecondaryText: var(--color-brandWhite);
   --Button-SecondaryBg: var(--color-transparent);
-  --Button-SecondaryBorder: var(--color-white);
-  --Button-SecondaryHoverBg: var(--color-primaryOne);
-  --Button-SecondaryHoverBorder: var(--color-primaryOne);
-  --Button-SecondaryHoverText: var(--color-white);
+  --Button-SecondaryBorder: var(--color-brandWhite);
+  --Button-SecondaryHoverBg: var(--color-brandGreyDark);
+  --Button-SecondaryHoverBorder: var(--color-brandGreyDark);
+  --Button-SecondaryHoverText: var(--color-brandWhite);
 
-  --Button-TertiaryText: var(--color-white);
-  --Button-TertiaryBg: var(--color-primaryTwo);
-  --Button-TertiaryBorder: var(--color-primaryTwo);
-  --Button-TertiaryHoverBg: var(--color-secondaryOne);
-  --Button-TertiaryHoverBorder: var(--color-secondaryOne);
+  --Button-TertiaryText: var(--color-brandWhite);
+  --Button-TertiaryBg: var(--color-brandGreyDark);
+  --Button-TertiaryBorder: var(--color-brandGreyDark);
+  --Button-TertiaryHoverBg: var(--color-brandGreyTile);
+  --Button-TertiaryHoverBorder: var(--color-brandGreyTile);
 
   /* Primitives - Arrow */
-  --Arrow-Icon: var(--color-primaryOne);
-  --Arrow-IconHover: var(--color-primaryTwo);
+  --Arrow-Icon: var(--color-brandWhite);
+  --Arrow-IconHover: var(--color-brandGreyLight);
 }

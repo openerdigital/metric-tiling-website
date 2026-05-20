@@ -7,7 +7,7 @@ import { IconProps } from "@primitives/Icon/Icon";
 
 const buttonStyles = cva(
   [
-    "typography-body group relative inline-flex items-center justify-center border-2 font-bold transition-colors duration-200",
+    "typography-bodySmall group relative inline-flex items-center justify-center border-2 font-bold transition-colors duration-200",
     "disabled:pointer-events-none disabled:opacity-60",
     "[&_svg]:icon-color-current [&_svg]:duration-450",
   ],

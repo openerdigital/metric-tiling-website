@@ -32,12 +32,13 @@ export type TypographyKey =
   | "playfairDisplay_lora"
   | "merriweather_openSans"
   | "archivoBlack_archivo"
-  | "robotoSlab_robotoFlex";
+  | "robotoSlab_robotoFlex"
+  | "microgramma_inter";
 
 /**
  * Switch this ONE key to change your whole site's heading/body fonts.
  */
-export const ACTIVE_TYPOGRAPHY: TypographyKey = "poppins_sourceSans3";
+export const ACTIVE_TYPOGRAPHY: TypographyKey = "microgramma_inter";
 
 export type Pack = {
   label: string;
@@ -193,11 +194,15 @@ const body_robotoFlex = Roboto_Flex({
 
 type Pair = {
   label: string;
-  heading: { variable: string };
+  heading?: { variable: string };
   body: { variable: string };
 };
 
 const PAIRS: Record<TypographyKey, Pair> = {
+  microgramma_inter: {
+    label: "Microgramma D / Inter",
+    body: body_inter,
+  },
   spaceGrotesk_inter: {
     label: "Space Grotesk / Inter",
     heading: heading_spaceGrotesk,
@@ -253,7 +258,9 @@ const PAIRS: Record<TypographyKey, Pair> = {
 function pack(pair: Pair): Pack {
   return {
     label: pair.label,
-    className: `${pair.heading.variable} ${pair.body.variable}`,
+    className: [pair.heading?.variable, pair.body.variable]
+      .filter(Boolean)
+      .join(" "),
   };
 }
 

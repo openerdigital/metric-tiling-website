@@ -1,16 +1,36 @@
+@font-face {
+  font-family: "Microgramma D";
+  src:
+    url("/fonts/metric-heading/MicrogrammaD-MediExte.woff2") format("woff2"),
+    url("/fonts/metric-heading/MicrogrammaD-MediExte.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Microgramma D";
+  src:
+    url("/fonts/metric-heading/MicrogrammaD-BoldExte.woff2") format("woff2"),
+    url("/fonts/metric-heading/MicrogrammaD-BoldExte.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
 @theme {
-  --font-heading:
-    ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-heading: "Microgramma D", Eurostile, "Arial Extended", ui-sans-serif,
+    system-ui, sans-serif;
   --font-body:
-    ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    "Microgramma D", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
 :root {
   /* mobile font sizes */
-  --Font-Size-h1: 55px;
-  --Font-Size-h2: 40px;
-  --Font-Size-h3: 30px;
-  --Font-Size-h4: 26px;
+  --Font-Size-h1: 38px;
+  --Font-Size-h2: 34px;
+  --Font-Size-h3: 27px;
+  --Font-Size-h4: 23px;
   --Font-Size-h5: 22px;
   --Font-Size-h6: 18px;
   --Font-Size-eyebrow: 14px;
@@ -20,10 +40,10 @@
   --Font-Size-footnote: 12px;
   /* desktop font sizes */
   @media (min-width: 1280px) {
-    --Font-Size-h1: 72px;
-    --Font-Size-h2: 58px;
-    --Font-Size-h3: 48px;
-    --Font-Size-h4: 38px;
+    --Font-Size-h1: 64px;
+    --Font-Size-h2: 48px;
+    --Font-Size-h3: 38px;
+    --Font-Size-h4: 30px;
     --Font-Size-h5: 32px;
     --Font-Size-h6: 23px;
     --Font-Size-eyebrow: 16px;
@@ -40,7 +60,7 @@
   --lineHeight-h5: 1.2;
   --lineHeight-h6: 1.3;
   --lineHeight-footnote: 1.3;
-  --lineHeight-body: 1.5;
+  --lineHeight-body: 1.6;
   /* body bold weight */
   --font-weight-bold: 700;
 }
@@ -48,8 +68,10 @@
 @utility typography-heading {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-  font-weight: bold;
+  font-weight: 600;
   font-family: var(--font-heading);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--Typography-Heading);
 }
 
@@ -90,12 +112,15 @@
 }
 
 @utility typography-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
   font-family: var(--font-body);
   color: var(--Typography-Body);
   font-size: var(--Font-Size-body-default);
   line-height: var(--lineHeight-body);
+  letter-spacing: 0.04em;
+  font-weight: 500;
+
 
   strong {
     font-weight: var(--font-weight-bold);
@@ -112,9 +137,11 @@
 }
 
 @utility typography-bodyLarge {
-  @apply typography-heading;
+  font-family: var(--font-body);
   font-weight: 600;
   font-size: var(--Font-Size-body-large);
+  line-height: var(--lineHeight-body);
+  text-transform: none;
   color: var(--Typography-BodyLarge);
 }
 

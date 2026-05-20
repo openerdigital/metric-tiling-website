@@ -45,8 +45,6 @@ const HomeScreen = ({ content }: any) => {
     form.navigationLabel,
   ];
 
-  const typography = getActiveTypography();
-
   const contactHref = `#${slugify(form.navigationLabel)}`;
 
   // Carousel Ideas
@@ -54,7 +52,7 @@ const HomeScreen = ({ content }: any) => {
   // https://dribbble.com/search/carousel
 
   return (
-    <div className={cn(typography.className, "font-body")}>
+    <div>
       <Hero
         navItems={navItems}
         {...hero}
@@ -63,7 +61,7 @@ const HomeScreen = ({ content }: any) => {
         button2Href={contactHref}
       />
       <div className="md:gap-102 grid gap-5 pt-5 sm:gap-7 md:pt-10">
-        <Cards {...services} wrapperVariant="slider" />
+        <Cards {...services} wrapperVariant="slider" cardVariant="contained" />
         <RotatingFeatures {...whyChooseUs} buttonHref={contactHref} />
         <SideBySideCTA
           {...about}

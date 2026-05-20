@@ -2,28 +2,35 @@
   --color-*: initial;
 
   /* client theme colors only */
-  --color-primaryOne: #1e3a8a; /* Deep Steel Blue – trustworthy, strong */
-  --color-primaryTwo: #1d8cd6; /* Clean Water Blue – modern, bright accent */
+  --color-brandBackground: #181820; /* sampled from supplied Metric Tiling SA brand image */
+  --color-brandWhite: #fdfdfd; /* sampled from METRIC wordmark */
+  --color-brandGreyLight: #cbccce; /* sampled from light M face */
+  --color-brandGreyMid: #adafb3; /* sampled from TILING SA and light tile tones */
+  --color-brandGreyTile: #9d9ea1; /* sampled from tiled square */
+  --color-brandGreyDark: #6a6d72; /* sampled from dark M pillar and tile */
 
-  --color-secondaryOne: #0b3d5b; /* Navy Slate – structure, depth */
-  --color-secondaryTwo: #0e7490; /* Teal Pipework – technical, clean */
-  --color-secondaryThree: #9ca3af; /* Cool Grey – neutral, professional */
+  --color-primaryOne: var(--color-brandBackground);
+  --color-primaryTwo: var(--color-brandGreyDark);
 
-  --color-utilitarianOne: #ffffff; /* White */
-  --color-utilitarianTwo: #1f2937; /* Charcoal – headings, strong contrast */
-  --color-utilitarianThree: #374151; /* Dark Grey – body text */
-  --color-utilitarianFour: #6b7280; /* Medium Grey – UI elements */
-  --color-utilitarianFive: #d1d5db; /* Light Grey – borders, lines */
-  --color-utilitarianSix: #f3f4f6; /* Very Light Grey – soft backgrounds */
-  --color-utilitarianSeven: #e0f2fe; /* Pale Water Blue – subtle brand tint */
-  --color-utilitarianEight: #f0f9ff; /* Ultra Light Blue – clean background */
+  --color-secondaryOne: var(--color-brandWhite);
+  --color-secondaryTwo: var(--color-brandGreyLight);
+  --color-secondaryThree: var(--color-brandGreyMid);
+
+  --color-utilitarianOne: var(--color-brandWhite);
+  --color-utilitarianTwo: var(--color-brandBackground);
+  --color-utilitarianThree: var(--color-brandGreyLight);
+  --color-utilitarianFour: var(--color-brandGreyMid);
+  --color-utilitarianFive: var(--color-brandGreyDark);
+  --color-utilitarianSix: var(--color-brandGreyTile);
+  --color-utilitarianSeven: var(--color-brandGreyMid);
+  --color-utilitarianEight: var(--color-brandGreyLight);
 
   /* misc colors */
   --color-inherit: inherit;
   --color-transparent: transparent;
-  --color-black: #000;
-  --color-white: #fff;
-  --color-silver: #e5e7eb;
+  --color-black: var(--color-brandBackground);
+  --color-white: var(--color-brandWhite);
+  --color-silver: var(--color-brandGreyLight);
   --color-current: currentColor;
 }
 

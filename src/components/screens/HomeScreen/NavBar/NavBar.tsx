@@ -2,7 +2,7 @@ import { cn } from "@helpers/cn";
 import { slugify } from "@helpers/slugify";
 import { useHash } from "@helpers/useHash";
 import { useMedia } from "@helpers/useMedia";
-import { AvenueLink, Button, Icon } from "@primitives";
+import { AvenueLink, Button, Icon, Image } from "@primitives";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { lock, unlock } from "tua-body-scroll-lock";
@@ -17,14 +17,18 @@ export const Logo = ({
   return (
     <a
       href="/"
-      className={cn(
-        "font-heading hover-opacity mr-auto border-2 p-1 font-bold",
-        variant === "overlay" ? "text-white" : "text-black",
-        className
-      )}
+      className={cn("hover-opacity mr-auto block shrink-0", className)}
+      aria-label="Metric Tiling SA home"
     >
-      {/* <Icon name="logo" className="w-250 h-60"/> */}
-      Client Logo
+      <Image
+        src="/images/metric-tiling-logo.png"
+        alt="Metric Tiling SA"
+        inheritSize
+        className={cn(
+          "w-140 md:w-170 object-contain",
+          variant === "overlay" && "drop-shadow-[0_1px_3px_rgba(0,0,0,0.35)]"
+        )}
+      />
     </a>
   );
 };
@@ -150,7 +154,7 @@ const DesktopNav = ({
   return (
     <ul
       className={cn(
-        "hidden md:flex",
+        "typography-bodySmall hidden md:flex",
         variant === "overlay" && "text-(--NavBar-ItemText)"
       )}
     >
