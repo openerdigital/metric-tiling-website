@@ -218,8 +218,10 @@ function StringListNode({
 
   return (
     <div className="grid">
-      <h3 className="mb-1 font-bold">{labelFromKey(node.key)}</h3>
-      <p className="typography-bodySmall mb-1 flex">
+      <h3 className="mb-1 font-bold text-[var(--color-cms-form-label)]">
+        {labelFromKey(node.key)}
+      </h3>
+      <p className="typography-bodySmall mb-1 flex text-[var(--color-cms-form-label)]">
         Drag the <Icon name="drag" className="mx-1 mt-[2px] size-2" />
         icon to reorder the items.
       </p>
@@ -314,8 +316,10 @@ function RepeaterNode({
 
   return (
     <div className="grid">
-      <h3 className="font-bold">{labelFromKey(node.key)}</h3>
-      <p className="typography-bodySmall mb-1 flex">
+      <h3 className="font-bold text-[var(--color-cms-form-label)]">
+        {labelFromKey(node.key)}
+      </h3>
+      <p className="typography-bodySmall mb-1 flex text-[var(--color-cms-form-label)]">
         Drag the <Icon name="drag" className="mx-1 mt-[2px] size-2" />
         icon to reorder the items.
       </p>

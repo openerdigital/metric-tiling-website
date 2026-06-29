@@ -62,7 +62,7 @@ const RHSMenu = ({ manifest, isSubmitting, userEmail }: RHSMenuProps) => {
           aria-expanded={open}
           aria-controls="rhs-sections"
         >
-          <h3 className="typography-h6">Sections</h3>
+          <h3 className="typography-h6 text-black">Sections</h3>
           <span className={cn("", "select-none")}>{open ? "▲" : "▼"}</span>
         </button>
 

@@ -32,7 +32,7 @@ const contentButtonStyles = cva(
       },
       size: {
         default: "px-2 py-1",
-        small: "h-4 min-w-4 px-[6px] text-[12px]",
+        small: "text-[12px]! h-4 min-w-4 px-[6px]",
       },
     },
     defaultVariants: {
