@@ -75,7 +75,7 @@ const HomeScreen = ({ content }: any) => {
           imagePosition="right"
           buttonHref={contactHref}
         />
-        <Testimonials {...testimonials} />
+        <Testimonials {...testimonials} alignment="left" />
         <FiftyFiftyCTA
           imagePosition="left"
           buttonHref={contactHref}
