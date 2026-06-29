@@ -19,10 +19,12 @@
 }
 
 @theme {
-  --font-heading: "Microgramma D", Eurostile, "Arial Extended", ui-sans-serif,
-    system-ui, sans-serif;
+  --font-heading:
+    "Microgramma D", Eurostile, "Arial Extended", ui-sans-serif, system-ui,
+    sans-serif;
   --font-body:
-    "Microgramma D", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    "Microgramma D", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Arial, sans-serif;
 }
 
 :root {
@@ -71,7 +73,6 @@
   font-weight: 600;
   font-family: var(--font-heading);
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--Typography-Heading);
 }
 
@@ -120,7 +121,6 @@
   line-height: var(--lineHeight-body);
   letter-spacing: 0.04em;
   font-weight: 500;
-
 
   strong {
     font-weight: var(--font-weight-bold);

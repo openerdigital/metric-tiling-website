@@ -1,4 +1,5 @@
 # Client Template
+
 test deploy
 Shared client-site template for the website + CMS projects that read and update
 their `clients` row in the shared Supabase project.

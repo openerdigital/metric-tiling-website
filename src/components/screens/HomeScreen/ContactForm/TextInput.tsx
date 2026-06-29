@@ -18,8 +18,7 @@ export const Label = ({
       htmlFor={name}
       className={cn(
         "bg-(--ContactForm-SectionBg) duration-240 pointer-events-none absolute left-2 top-2 px-1 font-bold",
-        isActive &&
-          "typography-footnote text-(--ContactForm-LabelActiveText) -top-1"
+        isActive && "typography-footnote -top-1 text-white"
       )}
     >
       {children}

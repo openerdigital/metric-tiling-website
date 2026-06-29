@@ -60,7 +60,7 @@ const FullWidthBanner1 = ({
             <Button
               href={buttonHref}
               className="mt-1 md:mt-2"
-              variant="tertiary"
+              variant="primary"
             >
               {button}
             </Button>

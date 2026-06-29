@@ -13,6 +13,7 @@ import { Footer } from "./Footer";
 import { FullWidthBanner1, FullWidthBanner2 } from "./FullWidthBanner";
 import { Hero } from "./Hero";
 import { Logos } from "./Logos";
+import { PaginatingCarousel } from "./PaginatingCarousel";
 import { RotatingFeatures } from "./RotatingFeatures";
 import { SideBySideCTA } from "./SideBySideCTA";
 import { Testimonials } from "./Testimonials";
@@ -61,8 +62,14 @@ const HomeScreen = ({ content }: any) => {
         button2Href={contactHref}
       />
       <div className="md:gap-102 grid gap-5 pt-5 sm:gap-7 md:pt-10">
-        <Cards {...services} wrapperVariant="slider" cardVariant="contained" />
-        <RotatingFeatures {...whyChooseUs} buttonHref={contactHref} />
+        <Cards
+          {...services}
+          wrapperVariant="slider"
+          cardVariant="open"
+          arrowStyle="cursor"
+        />
+        {/* <RotatingFeatures {...whyChooseUs} buttonHref={contactHref} /> */}
+        <PaginatingCarousel {...whyChooseUs} />
         <SideBySideCTA
           {...about}
           imagePosition="left"

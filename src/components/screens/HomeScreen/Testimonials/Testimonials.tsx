@@ -6,7 +6,22 @@ import { Icon } from "@primitives";
 import { AnimatePresence, motion } from "motion/react";
 import React from "react";
 
-const Testimonial = ({ currentIndex, quote, author }: any) => {
+type Alignment = "centered" | "left";
+type Items = { quote?: string; author?: string }[];
+
+const Testimonial = ({
+  currentIndex,
+  quote,
+  author,
+  alignment = "centered",
+}: {
+  currentIndex: number;
+  quote?: string;
+  author?: string;
+  alignment?: Alignment;
+}) => {
+  const isLeft = alignment === "left";
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -15,31 +30,77 @@ const Testimonial = ({ currentIndex, quote, author }: any) => {
         animate={{ x: 0, opacity: 1 }}
         exit={{ x: 20, opacity: 0 }}
         transition={{ duration: 0.6, ease: "easeInOut" }}
-        className={cn("flex flex-col items-center gap-3 text-center")}
+        className={cn(
+          "flex gap-3",
+          isLeft
+            ? "items-start text-left md:gap-4"
+            : "flex-col items-center text-center"
+        )}
       >
         <Icon
           name="quote"
-          className="size-120 icon-color-(--Testimonials-QuoteIcon)"
+          className={cn(
+            "icon-color-(--Testimonials-QuoteIcon)",
+            isLeft
+              ? "md:size-105 mt-1 size-48 -translate-y-1/2 opacity-70"
+              : "size-120"
+          )}
         />
 
-        <p className="typography-h5 text-(--Testimonials-QuoteText) font-bold">
-          {quote}
-        </p>
+        <div
+          className={cn(
+            isLeft ? "grid gap-2 md:gap-3" : "flex flex-col items-center gap-3"
+          )}
+        >
+          <p
+            className={cn(
+              "text-(--Testimonials-QuoteText) font-bold",
+              isLeft ? "typography-h3" : "typography-h5"
+            )}
+          >
+            {quote}
+          </p>
 
-        <div className="flex items-center font-bold">
-          <div className="bg-(--Testimonials-AuthorDash) mr-2 h-px w-20" />
-          <span className="typography-eyebrow text-(--Testimonials-AuthorText)">
-            {author}
-          </span>
+          <div
+            className={cn(
+              "flex items-center font-bold",
+              isLeft ? "" : "mt-1 w-full justify-center"
+            )}
+          >
+            <div
+              className={cn(
+                "bg-(--Testimonials-AuthorDash) mr-2 h-px",
+                isLeft ? "w-5" : "w-20"
+              )}
+            />
+            <span className="typography-eyebrow text-(--Testimonials-AuthorText)">
+              {author}
+            </span>
+          </div>
         </div>
       </motion.div>
     </AnimatePresence>
   );
 };
 
-const Dots = ({ items, currentIndex, onChange }: any) => {
+const Dots = ({
+  items,
+  currentIndex,
+  onChange,
+  alignment = "centered",
+}: {
+  items: Items;
+  currentIndex: number;
+  onChange: (item: Items[number]) => void;
+  alignment?: Alignment;
+}) => {
   return (
-    <div className="mx-auto mt-3 flex items-center gap-2 md:mt-5">
+    <div
+      className={cn(
+        "mt-3 flex items-center gap-2 md:mt-5",
+        alignment === "centered" ? "mx-auto" : "mx-auto"
+      )}
+    >
       {items.map((_: any, index: number) => {
         const isActive = index === currentIndex;
         return (
@@ -64,16 +125,17 @@ const Dots = ({ items, currentIndex, onChange }: any) => {
   );
 };
 
-type Items = { quote?: string; author?: string }[];
-
 const Testimonials = ({
   navigationLabel,
   items,
+  alignment = "left",
 }: {
   navigationLabel: string;
   items: Items;
+  alignment?: Alignment;
 }) => {
   const { ref: viewRef, inView } = useInView({ offset: "-100px" });
+  const isLeft = alignment === "left";
 
   const {
     current: activeTestimonial,
@@ -85,13 +147,21 @@ const Testimonials = ({
     <div
       ref={viewRef}
       id={slugify(navigationLabel)}
-      className="main-column md:max-w-860 flex max-w-[80%] flex-col"
+      className={cn(
+        "main-column flex flex-col py-2 md:py-5",
+        isLeft ? "md:max-w-[980px]" : "md:max-w-860 max-w-[80%]"
+      )}
     >
-      <Testimonial {...activeTestimonial} currentIndex={currentIndex} />
+      <Testimonial
+        {...activeTestimonial}
+        currentIndex={currentIndex}
+        alignment={alignment}
+      />
       <Dots
         items={items}
         currentIndex={currentIndex}
         onChange={setActiveTestimonial}
+        alignment={alignment}
       />
     </div>
   );

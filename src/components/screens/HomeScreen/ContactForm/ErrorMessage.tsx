@@ -25,7 +25,7 @@ const ErrorMessage = ({
       aria-live="polite"
       role={display ? "alert" : undefined}
       className={cn(
-        "typography-footnote text-(--ContactForm-ErrorText) mt-2 font-bold",
+        "typography-footnote mt-2 font-bold text-white",
         !display && "hidden",
         className
       )}

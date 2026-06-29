@@ -115,6 +115,7 @@ const defaultData = {
 
   testimonials: {
     navigationLabel: "Testimonials",
+    alignment: "centered",
     items: [
       {
         quote:

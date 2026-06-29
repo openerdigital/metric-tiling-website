@@ -63,7 +63,7 @@ const BaseSelectInput = React.forwardRef(
             <Select.Icon>
               <Icon
                 name="chevron_right"
-                className={cn("size-3", isOpen ? "-rotate-90" : "rotate-90")}
+                className={cn("size-4", isOpen ? "-rotate-90" : "rotate-90")}
               />
             </Select.Icon>
           </Select.Trigger>
@@ -80,9 +80,9 @@ const BaseSelectInput = React.forwardRef(
                     key={opt}
                     value={opt}
                     className={cn(
-                      "cursor-pointer px-3 py-16",
+                      "text-primaryOne cursor-pointer px-3 py-16",
                       "hover:bg-(--ContactForm-SelectOptionHoverBg) hover:text-(--ContactForm-SelectOptionHoverText)",
-                      "data-[state=checked]:bg-(--ContactForm-SelectOptionHoverBg) data-[state=checked]:text-white"
+                      "data-[state=checked]:bg-primaryOne data-[state=checked]:text-white"
                     )}
                   >
                     <Select.ItemText>{opt}</Select.ItemText>

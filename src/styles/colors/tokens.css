@@ -71,6 +71,8 @@
   --Cards-CardBg: var(--color-brandWhite);
   --Cards-CardHeading: var(--color-brandBackground);
   --Cards-CardText: var(--color-brandGreyDark);
+  --Cards-OpenCardHeading: var(--color-brandWhite);
+  --Cards-OpenCardText: var(--color-brandGreyLight);
 
   /* Footer */
   --Footer-Bg: var(--color-brandBackground);

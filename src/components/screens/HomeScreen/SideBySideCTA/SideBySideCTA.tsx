@@ -56,6 +56,7 @@ const SideBySideCTA = ({
             transition={{ type: "spring", mass: 4, damping: 50, delay: 0.3 }}
             href={buttonHref}
             className="mt-1 md:mt-2"
+            variant="tertiary"
           >
             {button}
           </MotionButton>

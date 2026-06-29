@@ -180,6 +180,7 @@ const Form = ({ selectOptions, button, setIsSubmitted }: any) => {
         type="submit"
         className=""
         disabled={isSubmitting}
+        variant="secondary"
         icon={{ name: isSubmitting ? "spinner" : "arrow_right_circle_filled" }}
       >
         {button || "Submit"}

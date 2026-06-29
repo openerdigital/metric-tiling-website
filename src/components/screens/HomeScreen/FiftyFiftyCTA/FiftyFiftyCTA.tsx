@@ -52,7 +52,11 @@ const FiftyFiftyCTA = ({
             </p>
           )}
           {paragraph && <p>{paragraph}</p>}
-          <Button href={buttonHref} className="mt-1 md:mt-2">
+          <Button
+            href={buttonHref}
+            className="mt-1 md:mt-2"
+            variant="secondary"
+          >
             {button}
           </Button>
         </motion.div>
