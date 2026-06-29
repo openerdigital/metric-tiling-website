@@ -18,6 +18,7 @@ export function LogoutButton() {
       onClick={logout}
       variant="delete"
       className="mb-1 h-40 w-full"
+      size="small"
     >
       Log out
     </ContentButton>

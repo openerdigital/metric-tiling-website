@@ -120,7 +120,7 @@ const PhoneButton = ({
 }) => {
   return (
     <>
-      <a href={`tel:${number}`} className="md:order-4 lg:hidden">
+      <a href={`tel:${number}`} className="bg:hidden md:order-4">
         <Icon
           name="phone_filled"
           className={cn(
@@ -132,8 +132,8 @@ const PhoneButton = ({
       <Button
         href={`tel:${number}`}
         className={cn(
-          "px-1! py-1! gap-1! order-4 hidden lg:flex",
-          variant === "overlay" && "text-(--NavBar-ItemText)"
+          "px-1! py-1! gap-1! bg:flex order-4 hidden",
+          variant === "overlay" && "text-(--NavBar-ItemText) text-[15px]!"
         )}
         transition="iconTranslate"
         icon={{ name: "phone", position: "left", className: "!size-3" }}
@@ -154,7 +154,7 @@ const DesktopNav = ({
   return (
     <ul
       className={cn(
-        "typography-bodySmall hidden md:flex",
+        "typography-bodySmall hidden items-center md:flex",
         variant === "overlay" && "text-(--NavBar-ItemText)"
       )}
     >
@@ -163,7 +163,7 @@ const DesktopNav = ({
           <li key={index}>
             <AvenueLink
               href={`#${slugify(item)}`}
-              className="group px-2 py-1 font-bold"
+              className="group px-[12px] py-1 font-bold"
             >
               <span className="relative mr-auto text-[16px]">
                 {item}
