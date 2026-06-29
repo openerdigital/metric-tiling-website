@@ -69,12 +69,12 @@ const Hero = ({
           sizes="100vw"
         />
 
-        <div className="bg-linear-to-r absolute left-0 top-0 h-full w-full from-black/70 to-black/0 md:w-3/4" />
+        <div className="bg-linear-to-r absolute left-0 top-0 h-full w-full from-black/100 to-black/0 md:w-3/4" />
         <div className="bg-linear-to-b absolute left-0 top-0 h-1/4 w-full from-black/80 to-black/0" />
         <AnimatePresence>
           <motion.div
-            initial={{ x: -40, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{
               duration: 1,
               ease: "easeOut",

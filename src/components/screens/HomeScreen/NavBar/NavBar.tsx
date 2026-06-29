@@ -17,7 +17,7 @@ export const Logo = ({
   return (
     <a
       href="/"
-      className={cn("hover-opacity mr-auto block shrink-0", className)}
+      className={cn("hover-opacity mr-auto block shrink-0 md:mr-0", className)}
       aria-label="Metric Tiling SA home"
     >
       <Image
@@ -120,7 +120,7 @@ const PhoneButton = ({
 }) => {
   return (
     <>
-      <a href={`tel:${number}`} className="md:hidden">
+      <a href={`tel:${number}`} className="md:order-4 lg:hidden">
         <Icon
           name="phone_filled"
           className={cn(
@@ -132,7 +132,7 @@ const PhoneButton = ({
       <Button
         href={`tel:${number}`}
         className={cn(
-          "px-1! py-1! gap-1! order-4 hidden md:flex",
+          "px-1! py-1! gap-1! order-4 hidden lg:flex",
           variant === "overlay" && "text-(--NavBar-ItemText)"
         )}
         transition="iconTranslate"
@@ -165,7 +165,7 @@ const DesktopNav = ({
               href={`#${slugify(item)}`}
               className="group px-2 py-1 font-bold"
             >
-              <span className="relative">
+              <span className="relative mr-auto text-[16px]">
                 {item}
 
                 <span

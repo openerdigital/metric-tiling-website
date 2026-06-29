@@ -72,12 +72,12 @@ const HomeScreen = ({ content }: any) => {
         <PaginatingCarousel {...whyChooseUs} />
         <SideBySideCTA
           {...about}
-          imagePosition="left"
+          imagePosition="right"
           buttonHref={contactHref}
         />
         <Testimonials {...testimonials} />
         <FiftyFiftyCTA
-          imagePosition="right"
+          imagePosition="left"
           buttonHref={contactHref}
           {...feature1}
         />

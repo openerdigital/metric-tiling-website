@@ -37,8 +37,11 @@ const FiftyFiftyCTA = ({
           transition={{ type: "spring", mass: 5, damping: 50 }}
           className={cn(
             "px-initGutter flex flex-col items-center gap-2 py-4 text-center",
-            "mc:pl-mainColumnGutter sm:items-start sm:px-6 sm:py-8 sm:text-left",
-            "md:my-7 md:mr-10 md:gap-3"
+            "sm:items-start sm:px-6 sm:py-8 sm:text-left",
+            "md:my-7 md:gap-3",
+            imagePosition === "right"
+              ? "mc:pl-mainColumnGutter md:mr-10"
+              : "mc:pr-mainColumnGutter md:ml-10"
           )}
         >
           {heading && (

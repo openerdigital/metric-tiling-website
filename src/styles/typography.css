@@ -119,7 +119,7 @@
   color: var(--Typography-Body);
   font-size: var(--Font-Size-body-default);
   line-height: var(--lineHeight-body);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   font-weight: 500;
 
   strong {
